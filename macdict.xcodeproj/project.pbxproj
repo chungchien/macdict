@@ -28,7 +28,7 @@
 		74FB4A1023F41687002699C6 /* macdict */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macdict; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FB4A1323F41687002699C6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		74FB4A1A23F416BB002699C6 /* macdict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macdict.swift; sourceTree = "<group>"; };
-		74FB4A1C23F416CC002699C6 /* macdict.swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macdict.swift.h; sourceTree = "<group>"; };
+		74FB4A1C23F416CC002699C6 /* macdict-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "macdict-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			children = (
 				74FB4A1323F41687002699C6 /* main.swift */,
 				74FB4A1A23F416BB002699C6 /* macdict.swift */,
-				74FB4A1C23F416CC002699C6 /* macdict.swift.h */,
+				74FB4A1C23F416CC002699C6 /* macdict-Bridging-Header.h */,
 			);
 			path = macdict;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 				DEVELOPMENT_TEAM = M5N3Y33N75;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = macdict/macdict.swift.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "macdict/macdict-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -267,7 +267,7 @@
 				DEVELOPMENT_TEAM = M5N3Y33N75;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = macdict/macdict.swift.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "macdict/macdict-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

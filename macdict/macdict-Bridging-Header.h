@@ -6,8 +6,8 @@
 //  Copyright © 2020 钟建峰. All rights reserved.
 //
 
-#ifndef macdict_swift_h
-#define macdict_swift_h
+#ifndef macdict_Bridging_Header_h
+#define macdict_Bridging_Header_h
 
 #import <Foundation/Foundation.h>
 
@@ -35,4 +35,4 @@ extern CFStringRef DCSRecordGetRawHeadword(CFTypeRef record);
 extern CFStringRef DCSRecordGetString(CFTypeRef record);
 extern CFStringRef DCSRecordGetTitle(CFTypeRef record);
 
-#endif /* macdict_swift_h */
+#endif /* macdict_Bridging_Header_h */
