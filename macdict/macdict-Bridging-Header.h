@@ -10,6 +10,7 @@
 #define macdict_Bridging_Header_h
 
 #import <Foundation/Foundation.h>
+#import <CoreServices/CoreServices.h>
 
 typedef NS_ENUM(NSUInteger, DCSRecordVersion) {
     DCSRecordVersionHTML = 0,
@@ -25,7 +26,6 @@ extern CFStringRef DCSDictionaryGetName(DCSDictionaryRef dictionary);
 extern CFStringRef DCSDictionaryGetShortName(DCSDictionaryRef dictionary);
 extern CFArrayRef DCSCopyAvailableDictionaries();
 extern CFArrayRef DCSCopyRecordsForSearchString(DCSDictionaryRef dictionary, CFStringRef string, void *, void *);
-//extern CFStringRef DCSRecordCopyData(CFTypeRef record);
 extern CFStringRef DCSRecordCopyData(CFTypeRef record, long version);
 extern CFStringRef DCSRecordCopyDataURL(CFTypeRef record);
 extern CFStringRef DCSRecordGetAnchor(CFTypeRef record);
